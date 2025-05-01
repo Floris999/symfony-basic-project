@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', name: 'app_main_index')]
     public function index(StarshipRepository $starshipRepository): Response
     {
         $ships = $starshipRepository->findAll();

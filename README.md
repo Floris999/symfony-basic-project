@@ -28,3 +28,7 @@ The project was built as part of a learning journey through the **Symfony Fundam
 - **Method**: `GET`
 - **Response**: Returns a JSON object of the starship with the specified ID.
 - **Error Handling**: Returns a 404 error if the starship is not found.
+
+### Workarounds
+If you using Laravel herd for local hosting. Which is not recommended with Symfony apps. You have to run the following command to set tailwind watch (-w). To built Tailwind and see your styling changes
+- **Command**: php bin/console tailwind:build -w
