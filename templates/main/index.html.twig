@@ -3,9 +3,9 @@
 {% block title %} Starshop: Beam up some parts!{% endblock %}
 {% block body %}
 <div>
-    Browse trough {{numberOfStarships * 10}} starships!
+    Browse trough {{ships | length * 10}} starships!
 
-    {% if numberOfStarships > 400 %}
+    {% if ships | length > 2 %}
         <p>
             {# Do you think "shiploads" will pass the legel team? #}
             That's a shiploads of ships!
